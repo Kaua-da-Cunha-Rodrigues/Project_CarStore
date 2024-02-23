@@ -5,8 +5,8 @@ const enviarEmail = require("./envia-email");
     2 - Verificar quem tem a tag X
     3 - criar a função para verificar o dia X
     4 - Criar função pra montar o corpo do email X
-    5 - Criar função para enviar para cada cliente permitido
-    5 - Tratar o retorno da mensagem de erro
+    5 - Criar função para enviar para cada cliente permitido X
+    5 - Tratar o retorno da mensagem de erro X
 */
 
 const listaClientes = [
@@ -37,7 +37,6 @@ function verificarCliente(clientes){
         }
     }
 }
-verificarCliente(listaClientes)
 
 function verificarDiaSemana(){
     const dataAtual = new Date();
@@ -100,4 +99,6 @@ function checarEnvioEmail(email){
             `)
         }
 }
+
+verificarCliente(listaClientes)
 prepararEnvioEmail()
